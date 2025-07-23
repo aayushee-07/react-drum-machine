@@ -2,7 +2,7 @@
   "name": "reactdrummachine",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://aayushee-07.github.io/reactdrummachine",
+  "homepage": "https://aayushee-07.github.io/react-drum-machine",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
