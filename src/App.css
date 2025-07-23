@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#drum-machine {
+  margin: 5% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #aaa;
+  border: 3px solid orange;
+  width: 550px;
+  height: 300px;
+  box-shadow: 0 0 20px #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pad-bank {
+  display: grid;
+  grid-template-columns: repeat(3, 70px);
+  grid-gap: 10px;
+  margin-right: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.drum-pad {
+  width: 70px;
+  height: 70px;
+  background: #333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 5px #111;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.controls {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 180px;
+  gap: 10px;
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.toggle {
+  width: 40px;
+  height: 20px;
+  background: black;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.inner {
+  width: 20px;
+  height: 20px;
+  background: blue;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.on {
+  transform: translateX(20px);
+}
+
+.off {
+  transform: translateX(0);
+}
+
+#display {
+  text-align: center;
+  background: #777;
+  padding: 5px 10px;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border-radius: 4px;
+  margin: 5px 0;
 }
