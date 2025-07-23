@@ -87,3 +87,59 @@ body {
   border-radius: 4px;
   margin: 5px 0;
 }
+/* 👇 Make layout responsive on small screens */
+@media (max-width: 600px) {
+  #drum-machine {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    margin: 30px auto;
+  }
+
+  .pad-bank {
+    margin-right: 0;
+    margin-bottom: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+
+  .drum-pad {
+    width: 60px;
+    height: 60px;
+    font-size: 16px;
+  }
+
+  .controls {
+    width: 100%;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .control {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
+  #display {
+    width: 90%;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .toggle {
+    width: 50px;
+    height: 25px;
+  }
+
+  .inner {
+    width: 25px;
+    height: 25px;
+  }
+
+  .on {
+    transform: translateX(25px);
+  }
+}
+
